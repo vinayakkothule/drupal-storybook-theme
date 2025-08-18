@@ -22,3 +22,25 @@ global:
       css/layout/layout.css: {}
     theme:
       css/theme/print.css: { media: print }
+main:
+  version: 1.x
+  css:
+    theme:
+      dist/main.css: 
+        weight: -10
+
+
+
+alpine:
+  remote: https://alpinejs.dev
+  version: 3.14.8
+  license:
+    name: MIT
+    url: https://github.com/alpinejs/alpine/blob/main/LICENSE.md
+    gpl-compatible: true
+  js:
+    https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js: 
+      type: external
+      minified: true
+      defer: true
+

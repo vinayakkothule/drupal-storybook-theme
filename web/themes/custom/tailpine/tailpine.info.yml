@@ -6,6 +6,8 @@ package: Custom
 core_version_requirement: ^10 || ^11
 libraries:
   - tailpine/global
+  - tailpine/main
+  - tailpine/alpine
 regions:
   header: 'Header'
   primary_menu: 'Primary menu'
@@ -18,3 +20,5 @@ regions:
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
   footer: 'Footer'
+
+  
