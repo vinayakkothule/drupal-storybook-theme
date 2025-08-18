@@ -3,10 +3,11 @@
   "private": true,
   "scripts": {
     "livereload": "livereload --exclusions node_modules/ --exts 'css,js,twig,theme,apng,avif,gif,jpg,jpeg,jfif,pjpeg,pjp,png,svg,webp'",
-    "build": "postcss .css/main.css -o  .dist/main.css",
-    "watch": "postcss .css/main.css -o  .dist/main.css --watch"
+    "build": "postcss css/main.css -o dist/main.css",
+    "watch": "postcss css/main.css -o dist/main.css --watch"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.21",
     "livereload": "^0.9.3"
   },
   "dependencies": {
