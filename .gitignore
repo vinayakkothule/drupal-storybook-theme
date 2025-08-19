@@ -45,3 +45,7 @@ keys/
 
 # Ignore everything in vendor/
 vendor/
+/.cache
+/node_modules
+
+*storybook.log
