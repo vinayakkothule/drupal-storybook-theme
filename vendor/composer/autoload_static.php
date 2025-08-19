@@ -13,8 +13,8 @@ class ComposerStaticInitd0b8b2c11c511386be059c43c3ce3c8c
         '662a729f963d39afe703c9d9b7ab4a8c' => __DIR__ . '/..' . '/symfony/polyfill-php83/bootstrap.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
-        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
@@ -57,6 +57,8 @@ class ComposerStaticInitd0b8b2c11c511386be059c43c3ce3c8c
         'T' => 
         array (
             'Twig\\' => 5,
+            'TwigStorybook\\Tests\\' => 20,
+            'TwigStorybook\\' => 14,
             'TijsVerkoyen\\CssToInlineStyles\\' => 31,
         ),
         'S' => 
@@ -90,6 +92,7 @@ class ComposerStaticInitd0b8b2c11c511386be059c43c3ce3c8c
             'Symfony\\Component\\Filesystem\\' => 29,
             'Symfony\\Component\\EventDispatcher\\' => 34,
             'Symfony\\Component\\ErrorHandler\\' => 31,
+            'Symfony\\Component\\DomCrawler\\' => 29,
             'Symfony\\Component\\DependencyInjection\\' => 38,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
@@ -227,6 +230,14 @@ class ComposerStaticInitd0b8b2c11c511386be059c43c3ce3c8c
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
         ),
+        'TwigStorybook\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/e0ipso/twig-storybook/tests/src',
+        ),
+        'TwigStorybook\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/e0ipso/twig-storybook/src',
+        ),
         'TijsVerkoyen\\CssToInlineStyles\\' => 
         array (
             0 => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src',
@@ -346,6 +357,10 @@ class ComposerStaticInitd0b8b2c11c511386be059c43c3ce3c8c
         'Symfony\\Component\\ErrorHandler\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/error-handler',
+        ),
+        'Symfony\\Component\\DomCrawler\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/dom-crawler',
         ),
         'Symfony\\Component\\DependencyInjection\\' => 
         array (
@@ -6238,6 +6253,25 @@ class ComposerStaticInitd0b8b2c11c511386be059c43c3ce3c8c
         'Symfony\\Component\\DependencyInjection\\TaggedContainerInterface' => __DIR__ . '/..' . '/symfony/dependency-injection/TaggedContainerInterface.php',
         'Symfony\\Component\\DependencyInjection\\TypedReference' => __DIR__ . '/..' . '/symfony/dependency-injection/TypedReference.php',
         'Symfony\\Component\\DependencyInjection\\Variable' => __DIR__ . '/..' . '/symfony/dependency-injection/Variable.php',
+        'Symfony\\Component\\DomCrawler\\AbstractUriElement' => __DIR__ . '/..' . '/symfony/dom-crawler/AbstractUriElement.php',
+        'Symfony\\Component\\DomCrawler\\Crawler' => __DIR__ . '/..' . '/symfony/dom-crawler/Crawler.php',
+        'Symfony\\Component\\DomCrawler\\Field\\ChoiceFormField' => __DIR__ . '/..' . '/symfony/dom-crawler/Field/ChoiceFormField.php',
+        'Symfony\\Component\\DomCrawler\\Field\\FileFormField' => __DIR__ . '/..' . '/symfony/dom-crawler/Field/FileFormField.php',
+        'Symfony\\Component\\DomCrawler\\Field\\FormField' => __DIR__ . '/..' . '/symfony/dom-crawler/Field/FormField.php',
+        'Symfony\\Component\\DomCrawler\\Field\\InputFormField' => __DIR__ . '/..' . '/symfony/dom-crawler/Field/InputFormField.php',
+        'Symfony\\Component\\DomCrawler\\Field\\TextareaFormField' => __DIR__ . '/..' . '/symfony/dom-crawler/Field/TextareaFormField.php',
+        'Symfony\\Component\\DomCrawler\\Form' => __DIR__ . '/..' . '/symfony/dom-crawler/Form.php',
+        'Symfony\\Component\\DomCrawler\\FormFieldRegistry' => __DIR__ . '/..' . '/symfony/dom-crawler/FormFieldRegistry.php',
+        'Symfony\\Component\\DomCrawler\\Image' => __DIR__ . '/..' . '/symfony/dom-crawler/Image.php',
+        'Symfony\\Component\\DomCrawler\\Link' => __DIR__ . '/..' . '/symfony/dom-crawler/Link.php',
+        'Symfony\\Component\\DomCrawler\\Test\\Constraint\\CrawlerAnySelectorTextContains' => __DIR__ . '/..' . '/symfony/dom-crawler/Test/Constraint/CrawlerAnySelectorTextContains.php',
+        'Symfony\\Component\\DomCrawler\\Test\\Constraint\\CrawlerAnySelectorTextSame' => __DIR__ . '/..' . '/symfony/dom-crawler/Test/Constraint/CrawlerAnySelectorTextSame.php',
+        'Symfony\\Component\\DomCrawler\\Test\\Constraint\\CrawlerSelectorAttributeValueSame' => __DIR__ . '/..' . '/symfony/dom-crawler/Test/Constraint/CrawlerSelectorAttributeValueSame.php',
+        'Symfony\\Component\\DomCrawler\\Test\\Constraint\\CrawlerSelectorCount' => __DIR__ . '/..' . '/symfony/dom-crawler/Test/Constraint/CrawlerSelectorCount.php',
+        'Symfony\\Component\\DomCrawler\\Test\\Constraint\\CrawlerSelectorExists' => __DIR__ . '/..' . '/symfony/dom-crawler/Test/Constraint/CrawlerSelectorExists.php',
+        'Symfony\\Component\\DomCrawler\\Test\\Constraint\\CrawlerSelectorTextContains' => __DIR__ . '/..' . '/symfony/dom-crawler/Test/Constraint/CrawlerSelectorTextContains.php',
+        'Symfony\\Component\\DomCrawler\\Test\\Constraint\\CrawlerSelectorTextSame' => __DIR__ . '/..' . '/symfony/dom-crawler/Test/Constraint/CrawlerSelectorTextSame.php',
+        'Symfony\\Component\\DomCrawler\\UriResolver' => __DIR__ . '/..' . '/symfony/dom-crawler/UriResolver.php',
         'Symfony\\Component\\ErrorHandler\\BufferingLogger' => __DIR__ . '/..' . '/symfony/error-handler/BufferingLogger.php',
         'Symfony\\Component\\ErrorHandler\\Command\\ErrorDumpCommand' => __DIR__ . '/..' . '/symfony/error-handler/Command/ErrorDumpCommand.php',
         'Symfony\\Component\\ErrorHandler\\Debug' => __DIR__ . '/..' . '/symfony/error-handler/Debug.php',
@@ -7329,6 +7363,24 @@ class ComposerStaticInitd0b8b2c11c511386be059c43c3ce3c8c
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Property\\Property' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Property/Property.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
+        'TwigStorybook\\Exception\\StoryRenderException' => __DIR__ . '/..' . '/e0ipso/twig-storybook/src/Exception/StoryRenderException.php',
+        'TwigStorybook\\Exception\\StorySyntaxException' => __DIR__ . '/..' . '/e0ipso/twig-storybook/src/Exception/StorySyntaxException.php',
+        'TwigStorybook\\Service\\StoryCollector' => __DIR__ . '/..' . '/e0ipso/twig-storybook/src/Service/StoryCollector.php',
+        'TwigStorybook\\Service\\StoryRenderer' => __DIR__ . '/..' . '/e0ipso/twig-storybook/src/Service/StoryRenderer.php',
+        'TwigStorybook\\Story' => __DIR__ . '/..' . '/e0ipso/twig-storybook/src/Story.php',
+        'TwigStorybook\\Tests\\Exception\\ExceptionsTest' => __DIR__ . '/..' . '/e0ipso/twig-storybook/tests/src/Exception/ExceptionsTest.php',
+        'TwigStorybook\\Tests\\Service\\StoryCollectorTest' => __DIR__ . '/..' . '/e0ipso/twig-storybook/tests/src/Service/StoryCollectorTest.php',
+        'TwigStorybook\\Tests\\Service\\StoryRendererTest' => __DIR__ . '/..' . '/e0ipso/twig-storybook/tests/src/Service/StoryRendererTest.php',
+        'TwigStorybook\\Tests\\StoryTest' => __DIR__ . '/..' . '/e0ipso/twig-storybook/tests/src/StoryTest.php',
+        'TwigStorybook\\Tests\\Twig\\TokenParser\\StoriesTokenParserTest' => __DIR__ . '/..' . '/e0ipso/twig-storybook/tests/src/Twig/TokenParser/StoriesTokenParserTest.php',
+        'TwigStorybook\\Tests\\Twig\\TokenParser\\StoryTokenParserTest' => __DIR__ . '/..' . '/e0ipso/twig-storybook/tests/src/Twig/TokenParser/StoryTokenParserTest.php',
+        'TwigStorybook\\Tests\\Twig\\TwigExtensionTest' => __DIR__ . '/..' . '/e0ipso/twig-storybook/tests/src/Twig/TwigExtensionTest.php',
+        'TwigStorybook\\Twig\\Node\\NodeTrait' => __DIR__ . '/..' . '/e0ipso/twig-storybook/src/Twig/Node/NodeTrait.php',
+        'TwigStorybook\\Twig\\Node\\StoriesNode' => __DIR__ . '/..' . '/e0ipso/twig-storybook/src/Twig/Node/StoriesNode.php',
+        'TwigStorybook\\Twig\\Node\\StoryNode' => __DIR__ . '/..' . '/e0ipso/twig-storybook/src/Twig/Node/StoryNode.php',
+        'TwigStorybook\\Twig\\TokenParser\\StoriesTokenParser' => __DIR__ . '/..' . '/e0ipso/twig-storybook/src/Twig/TokenParser/StoriesTokenParser.php',
+        'TwigStorybook\\Twig\\TokenParser\\StoryTokenParser' => __DIR__ . '/..' . '/e0ipso/twig-storybook/src/Twig/TokenParser/StoryTokenParser.php',
+        'TwigStorybook\\Twig\\TwigExtension' => __DIR__ . '/..' . '/e0ipso/twig-storybook/src/Twig/TwigExtension.php',
         'Twig\\AbstractTwigCallable' => __DIR__ . '/..' . '/twig/twig/src/AbstractTwigCallable.php',
         'Twig\\Attribute\\AsTwigFilter' => __DIR__ . '/..' . '/twig/twig/src/Attribute/AsTwigFilter.php',
         'Twig\\Attribute\\AsTwigFunction' => __DIR__ . '/..' . '/twig/twig/src/Attribute/AsTwigFunction.php',

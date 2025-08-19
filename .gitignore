@@ -41,3 +41,7 @@ keys/
 # Ignore .sql files as they are privated
 *.sql
 *.sql.gz
+
+
+# Ignore everything in vendor/
+vendor/
