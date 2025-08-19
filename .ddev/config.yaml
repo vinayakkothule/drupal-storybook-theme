@@ -302,3 +302,44 @@ default_container_timeout: "240"
 #   - exec: drush sql:sanitize
 #   - exec: drush updatedb
 #   - exec: drush cache:rebuild
+
+
+# Storybook expose the ports
+
+# Node.js integration
+nodejs_version: "18"
+
+# Extra packages needed for node builds
+webimage_extra_packages:
+  - pkg-config
+  - libpixman-1-dev
+  - libcairo2-dev
+  - libpango1.0-dev
+  - make
+
+# Expose Storybook ports
+web_extra_exposed_ports:
+  - name: storybook
+    container_port: 6006
+    http_port: 6007
+    https_port: 6006
+
+# Background daemon for Node.js container
+web_extra_daemons:
+  - name: node.js
+    command: "tail -f package.json >/dev/null"
+    directory: /var/www/html
+
+# Hooks
+hooks:
+  post-start:
+    - exec: echo '=============================================================='
+    - exec: echo ' NOTICE'
+    - exec: echo '=============================================================='
+    - exec: echo 'The node.js container is ready. You can start storybook by typing:'
+    - exec: echo '  ddev yarn storybook'
+    - exec: echo ''
+    - exec: echo 'By default it will be available at https://change-me.ddev.site:6006'
+    - exec: echo 'Use "ddev describe" to confirm if this doesn’t work.'
+    - exec: echo 'Check logs with "ddev logs --follow --time"'
+    - exec: echo '=============================================================='

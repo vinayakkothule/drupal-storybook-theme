@@ -14,6 +14,21 @@
 # sites/default/default.services.yml or from core/core.services.yml file.
 parameters:
   http.response.debug_cacheability_headers: true
+  storybook.development: true
+  cors.config:
+    enabled: true
+    allowedHeaders: ['*']
+    allowedMethods: ['*']
+    allowedOrigins: ['*']
+    exposedHeaders: false
+    maxAge: false
+    supportsCredentials: true
+  twig.config:
+    debug: true
+    auto_reload: true
+    cache: false
+
+
 services:
   cache.backend.null:
     class: Drupal\Core\Cache\NullBackendFactory
@@ -28,3 +43,6 @@ services:
       - '@logger.channel.config_schema'
     tags:
       - { name: event_subscriber }
+
+
+
